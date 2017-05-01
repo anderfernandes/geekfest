@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6f0ee70cafdd352c42fa2a8dbb38202",
+    "content-hash": "2c1f21c6f75605fbdf7d17942b103135",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -4076,7 +4076,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6.4"
+        "php": ">=5.6.4",
+        "ext-gd": "*"
     },
     "platform-dev": []
 }
