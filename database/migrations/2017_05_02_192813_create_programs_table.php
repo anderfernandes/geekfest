@@ -17,8 +17,8 @@ class CreateProgramsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('name');
-            $table->string('description');
-            $table->string('bulding');
+            $table->text('description');
+            $table->string('building');
             $table->string('room');
             $table->time('time');
             $table->date('date');
