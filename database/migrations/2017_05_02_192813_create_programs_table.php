@@ -13,16 +13,16 @@ class CreateProgramsTable extends Migration
      */
     public function up()
     {
-        Schema::table('programs', function (Blueprint $table) {
+        Schema::create('programs', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->time('time');
             $table->string('name');
-            $table->string('building');
-            $table->string('room');
-            $table->string('presenter');
             $table->string('description');
-            $table->string('date');
+            $table->string('bulding');
+            $table->string('room');
+            $table->time('time');
+            $table->date('date');
+            $table->string('presenter');
 
         });
     }
@@ -34,6 +34,6 @@ class CreateProgramsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('programs');
+        Schema::dropIfExists('programs');
     }
 }
